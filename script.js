@@ -1,24 +1,24 @@
-// Function to handle form submission
-function submitForm(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
+// Smooth Scroll for Navigation Links
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 60, // adjust for header height
+        behavior: 'smooth'
+      });
+    }
+  });
+});
 
-    // Get the values from the form inputs
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    // You can perform further validation or processing with the form data here
-    // For now, let's simply log the values to the console
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
-
-    // Reset the form inputs
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
+// Optional: simple form submission alert
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for reaching out! I will get back to you soon.');
+    contactForm.reset();
+  });
 }
-
-// Add an event listener to the form submit event
-const form = document.getElementById("contactForm");
-form.addEventListener("submit", submitForm);
