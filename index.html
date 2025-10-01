@@ -13,14 +13,16 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li> <!-- Added Blog link -->
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
             <p>Hello I'm Yudha. I'm a PhD student in International Biotech and Healthcare Management, Taipei Medical University. 
@@ -29,32 +31,71 @@
                 Besides playing with data, I love Walking, Cycling, and Japanese Pop Culture. Nice to meet you!</p>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Herewith I post some of my recent projects that made into publications or conferences that relate to my academics.
-            But it's still far from enough :p</p>
+        <!-- Research Section (previous projects) -->
+        <section id="research">
+            <h2>📑 Research</h2>
+            <p>Herewith I post some of my recent research projects that made it into publications or conferences.</p>
             <ul>
-                <li><a href="https://www.ohdsi-europe.org/images/symposium-2024/Posters/OHDSI_yudha_poster_predictingCRLM_portrait_fix_2%20-%20Yudha%20Eri%20Saputra.pdf">Predicting CRLM using TMUCRD Mapped-OMOP-OHDSI</a></li>
-                <p>After we got our feedback from practitioners, CRLM is more concerning than HCC. Thus, we pivoted to CRLM.
-                Liver Metastases is one of the most prevalent malignancies that cause mortality among colorectal cancer patients
-                where 25-30% affected by the malignancy worldwide. Predicting the occurrence of colorectal cancer liver metastases
-                (CRLM) could benefit physicians in deciding the diagnoses. We create a prediction model by using machine learning on
-                the electronic health record to discover susceptible characteristics for secondary malignant neoplasm of liver cancer in
-                colorectal cancer patients.</p>                
-                <li><a href="https://www.ohdsi.org/wp-content/uploads/2023/08/APAC-20-Yudha-Eri-Saputra_Predicting-HCC.pdf">Predicting Hepatic Carcinoma from Colorectal Cancer Patient using Machine Learning with TMUCRD Mapped-OMOP-OHDSI</a></li>
-                <p>Liver is a common organ target of metastasis for colorectal cancer, which indicates the possibility of
-                nonmetastatic cancer. We create a prediction model by using machine learning on the electronic
-                health record to discover susceptible characteristics for liver cancer in colorectal cancer patients.</p> 
-                <li><a href="https://penerbit.brin.go.id/press/catalog/view/537/529/11640">Bridging a resilient recovery post-pandemic through digital health transformation</a></li>
-                <p>Pandemic situations change everything. In 2022, with the Indonesia Student Overseas Association, we created a brief on how digital health helps to cope with COVID-19 around certain countries.</p>                                
+                <li>
+                    <a href="https://www.ohdsi-europe.org/images/symposium-2024/Posters/OHDSI_yudha_poster_predictingCRLM_portrait_fix_2%20-%20Yudha%20Eri%20Saputra.pdf">
+                        Predicting CRLM using TMUCRD Mapped-OMOP-OHDSI
+                    </a>
+                    <p>After we got feedback from practitioners, CRLM is more concerning than HCC. Thus, we pivoted to CRLM.
+                    Liver Metastases is one of the most prevalent malignancies that cause mortality among colorectal cancer patients
+                    where 25-30% affected by the malignancy worldwide. Predicting the occurrence of colorectal cancer liver metastases
+                    (CRLM) could benefit physicians in deciding the diagnoses. We created a prediction model using machine learning on
+                    electronic health records to discover susceptible characteristics for secondary malignant neoplasm of liver cancer in
+                    colorectal cancer patients.</p>
+                </li>                
+                <li>
+                    <a href="https://www.ohdsi.org/wp-content/uploads/2023/08/APAC-20-Yudha-Eri-Saputra_Predicting-HCC.pdf">
+                        Predicting Hepatic Carcinoma from Colorectal Cancer Patient using Machine Learning
+                    </a>
+                    <p>Liver is a common organ target of metastasis for colorectal cancer, which indicates the possibility of
+                    nonmetastatic cancer. We created a prediction model using machine learning on electronic
+                    health records to discover susceptible characteristics for liver cancer in colorectal cancer patients.</p>
+                </li> 
+                <li>
+                    <a href="https://penerbit.brin.go.id/press/catalog/view/537/529/11640">
+                        Bridging a Resilient Recovery Post-Pandemic through Digital Health Transformation
+                    </a>
+                    <p>Pandemic situations changed everything. In 2022, with the Indonesia Student Overseas Association, we created a brief on how digital health helps to cope with COVID-19 around certain countries.</p>
+                </li>                                
             </ul>
         </section>
 
+        <!-- Projects Section (software / full-stack apps) -->
+        <section id="projects">
+            <h2>🚀 Projects</h2>
+            <div class="project-card">
+                <h3>Scholaraio</h3>
+                <p>AI-powered academic tool built with Next.js and Supabase for student learning and research assistance.</p>
+                <a href="https://vercel.com/yudhaesaps-projects/scholaraio" target="_blank">Live Demo</a> |
+                <a href="https://github.com/YudhaESap/scholaraio" target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Job Tracker App</h3>
+                <p>Full stack Next.js + Supabase app to track job applications with dashboard, filters, and stats.</p>
+                <a href="#" target="_blank">Live Demo</a> |
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>E-commerce Store</h3>
+                <p>Mini online store with React, Node.js, MongoDB, cart functionality, and Stripe checkout integration.</p>
+                <a href="#" target="_blank">Live Demo</a> |
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
         <section id="blog">
             <h2>Blog</h2>
             <p>Coming soon! Stay tuned for updates on my research and thoughts.</p>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
             <p>Feel free to send Hi!</p>
