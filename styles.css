@@ -1,69 +1,141 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, li, form {
-    margin: 0;
-    padding: 0;
-}
-
+/* ===========================
+   General Styles
+=========================== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* ===========================
+   Header & Navigation
+=========================== */
 header {
-    background-color: #1e1e1e; /* Dark header */
-    padding: 20px;
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    margin: 0;
-    color: #ffffff; /* White text */
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff; /* White links */
-    transition: color 0.3s; /* Smooth color change on hover */
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #f1c40f; /* Yellow on hover */
-}
-
-main {
-    padding: 20px;
-}
-
+/* ===========================
+   Sections
+=========================== */
 section {
-    margin-bottom: 30px;
-    background-color: #1e1e1e; /* Dark section background */
-    padding: 15px; /* Add padding for better spacing */
-    border-radius: 8px; /* Rounded corners */
+  padding: 4rem 2rem;
 }
 
 section h2 {
-    margin-bottom: 10px;
-    color: #f1c40f; /* Yellow color for section titles */
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-#projects p {
-    margin-bottom: 1.5em; /* Adjust as needed */
+/* ===========================
+   Research & Project Cards
+=========================== */
+.project-card, .research-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.project-card:hover, .research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h3, .research-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p, .research-card p {
+  font-size: 0.95rem;
+}
+
+/* ===========================
+   Forms
+=========================== */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* ===========================
+   Footer
+=========================== */
 footer {
-    background-color: #1e1e1e; /* Dark footer */
-    padding: 10px;
-    text-align: center;
-    color: #ffffff; /* White text */
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
